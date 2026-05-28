@@ -368,6 +368,10 @@ For more detailed troubleshooting, see **TROUBLESHOOTING.md**
 
 ## 📊 Datasets
 
+### **Dataset Information**
+
+This project uses three main datasets totaling **1.2 GB**. Due to GitHub size limitations, datasets are **not included** in this repository.
+
 ### **NASA Battery Dataset**
 - **Source:** NASA Prognostics Data Repository
 - **Batteries:** 56 Li-ion batteries (B0005-B0056)
@@ -393,19 +397,37 @@ For more detailed troubleshooting, see **TROUBLESHOOTING.md**
 - **Content:** Pre-computed features + RUL labels
 - **Use Case:** RUL prediction with ML models
 
+### **📥 How to Get the Datasets**
+
+**Option 1: Download from Original Sources**
+- **NASA Dataset:** [NASA Prognostics Data Repository](https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/)
+- **Hawaii Dataset:** [Kaggle - Battery RUL Dataset](https://www.kaggle.com/)
+
+**Option 2: Contact Repository Owner**
+- Datasets can be shared via Google Drive or other file sharing services
+- Contact: [Your Email/Contact Info]
+
+**Option 3: Use Sample Data**
+- The code includes data loading utilities in `battery_loader.py`
+- You can test with your own battery datasets
+
 ### **Dataset Setup**
 
-Datasets are managed using **Git LFS** (Large File Storage). Total size: **1.2 GB**
+After downloading, place datasets in the following structure:
 
-```bash
-# Clone repository with datasets
-git lfs clone https://github.com/yourusername/battery-management-system.git
-
-# Or if already cloned, pull LFS files
-git lfs pull
+```
+project/
+├── datasets/
+│   ├── battery_data/          # NASA .mat files
+│   ├── archive/                # NASA CSV files
+│   ├── Dataset_Li-ion/         # Li-ion dataset
+│   └── rul_dataset/            # RUL dataset
 ```
 
-**Note:** First-time download may take 10-15 minutes depending on your internet speed.
+Then run:
+```bash
+python setup_datasets.py  # Verify dataset structure
+```
 
 ---
 
