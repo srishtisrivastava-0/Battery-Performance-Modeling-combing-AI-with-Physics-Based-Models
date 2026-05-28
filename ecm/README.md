@@ -241,14 +241,3 @@ pip install numpy pandas scipy matplotlib seaborn scikit-learn
 
 ---
 
-## 📞 Support
-
-- **Issues:** Check `ECM_GUIDE.md` troubleshooting section
-- **Examples:** Run `ecm_notebook.ipynb` for working examples
-- **Theory:** See `ECM_GUIDE.md` for detailed explanations
-
----
-
-**Status:** ✅ Ready to Use  
-**Compatibility:** Works with NASA battery dataset  
-**Last Updated:** May 2026
