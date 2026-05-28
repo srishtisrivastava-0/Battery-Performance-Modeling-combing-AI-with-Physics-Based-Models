@@ -454,12 +454,6 @@ This project is available for educational and research purposes.
 
 ---
 
-## 📞 Contact
-
-For questions or collaboration opportunities, please reach out through the repository issues page.
-
----
-
 ## ✅ Project Status
 
 - ✅ Machine Learning Implementation Complete
