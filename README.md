@@ -348,17 +348,9 @@ For more detailed troubleshooting, see **TROUBLESHOOTING.md**
 
 ## 🎓 References & Resources
 
-### **Battery Theory**
-- Battery University - [batteryuniversity.com](https://batteryuniversity.com)
-- NREL Battery Research - [nrel.gov/transportation/batteries](https://www.nrel.gov/transportation/batteries.html)
-
 ### **Machine Learning**
 - Scikit-learn Documentation - [scikit-learn.org](https://scikit-learn.org)
 - TensorFlow Tutorials - [tensorflow.org/tutorials](https://www.tensorflow.org/tutorials)
-
-### **Equivalent Circuit Models**
-- "Battery Management Systems" by Gregory Plett
-- "Electrochemical Methods" by Bard and Faulkner
 
 ### **Datasets**
 - NASA Prognostics Data Repository
@@ -428,14 +420,3 @@ Then run:
 ```bash
 python setup_datasets.py  # Verify dataset structure
 ```
-
----
-
-## 🚀 Future Enhancements
-
-- [ ] Real-time monitoring dashboard with web interface
-- [ ] Transfer learning for new battery chemistries
-- [ ] Extended Kalman Filter (EKF) for online SoC estimation
-- [ ] Cloud deployment for scalable predictions
-- [ ] Mobile app integration for BMS monitoring
-- [ ] Explainable AI (SHAP/LIME) for model interpretability
