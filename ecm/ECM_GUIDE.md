@@ -1,6 +1,6 @@
 # ECM (Equivalent Circuit Model) Implementation Guide
 
-## 🎯 What is ECM?
+## What is ECM?
 
 **ECM (Equivalent Circuit Model)** is a physics-based approach to battery modeling that represents battery behavior using electrical circuit elements:
 
@@ -12,7 +12,7 @@ Unlike pure data-driven ML approaches, ECM provides **physically interpretable p
 
 ---
 
-## 🔋 ECM Models Implemented
+## ECM Models Implemented
 
 ### 1. **Rint Model** (Simplest)
 
@@ -81,7 +81,7 @@ Equations:
 
 ---
 
-## 📊 Comparison: ECM vs ML Approach
+## Comparison: ECM vs ML Approach
 
 | Aspect | ECM (This Implementation) | ML (Original Project) |
 |--------|---------------------------|----------------------|
@@ -89,15 +89,15 @@ Equations:
 | **Model Type** | Differential equations | Neural networks |
 | **Parameters** | R, C, OCV (physically meaningful) | Weights/biases (black box) |
 | **Training Data** | Can work with limited data | Requires large datasets |
-| **Interpretability** | ✅ High - parameters have physical meaning | ❌ Low - black box |
-| **Real-time** | ✅ Fast computation | ⚠️ Depends on model size |
-| **Accuracy** | ⚠️ Good with proper identification | ✅ High with enough data |
-| **Generalization** | ✅ Better across conditions | ⚠️ Limited to training distribution |
-| **Fault Detection** | ✅ Parameter changes indicate faults | ⚠️ Requires labeled fault data |
+| **Interpretability** |  High - parameters have physical meaning |  Low - black box |
+| **Real-time** |  Fast computation |  Depends on model size |
+| **Accuracy** |  Good with proper identification |  High with enough data |
+| **Generalization** |  Better across conditions |  Limited to training distribution |
+| **Fault Detection** |  Parameter changes indicate faults |  Requires labeled fault data |
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. **Run the Jupyter Notebook**
 
@@ -210,7 +210,7 @@ Use Extended Kalman Filter (EKF) with ECM:
 
 ---
 
-## 🔬 Parameter Interpretation
+## Parameter Interpretation
 
 ### **R0 (Ohmic Resistance)**
 
@@ -219,7 +219,7 @@ Use Extended Kalman Filter (EKF) with ECM:
 - Represents: SEI layer, electrolyte, current collectors
 
 **Degradation:**
-- ⬆️ Increases with aging
+- Increases with aging
 - Causes: SEI growth, electrolyte decomposition, corrosion
 
 **Typical Values:**
@@ -239,7 +239,7 @@ Use Extended Kalman Filter (EKF) with ECM:
 - Represents: Electrochemical reaction kinetics
 
 **Degradation:**
-- ⬆️ Increases with aging
+- Increases with aging
 - Causes: Active material loss, surface passivation
 
 **Typical Values:**
@@ -259,7 +259,7 @@ Use Extended Kalman Filter (EKF) with ECM:
 - Represents: Charge storage capability
 
 **Degradation:**
-- ⬇️ Decreases with aging
+- Decreases with aging
 - Causes: Surface area reduction, pore clogging
 
 **Typical Values:**
@@ -292,7 +292,7 @@ Use Extended Kalman Filter (EKF) with ECM:
 
 ---
 
-## 📊 Expected Results
+## Expected Results
 
 ### **Model Accuracy**
 
@@ -319,7 +319,7 @@ For Battery B0005 (168 cycles):
 
 ---
 
-## 🛠️ Advanced Usage
+## Advanced Usage
 
 ### **Hybrid ECM + ML Approach**
 
@@ -345,10 +345,10 @@ capacity_pred = model.predict(X_new)
 ```
 
 **Benefits:**
-- ✅ Physically interpretable features
-- ✅ Better generalization
-- ✅ Requires less training data
-- ✅ Fault detection capability
+- Physically interpretable features
+- Better generalization
+- Requires less training data
+- Fault detection capability
 
 ---
 
@@ -379,7 +379,7 @@ for battery_id in batteries:
 
 ---
 
-## 📚 Files Created
+## Files Created
 
 1. **`ecm_model.py`** - Core ECM model implementations
    - `RintModel` class
@@ -402,16 +402,16 @@ for battery_id in batteries:
 
 ---
 
-## ✅ Summary
+## Summary
 
 You now have a complete ECM implementation that:
 
-✅ **Three ECM models** (Rint, RC, 2RC)  
-✅ **Parameter extraction** from battery data  
-✅ **Degradation tracking** over lifetime  
-✅ **Visualization tools** for analysis  
-✅ **Physically interpretable** results  
-✅ **Ready for hybrid ML+ECM** approaches  
+ **Three ECM models** (Rint, RC, 2RC)  
+ **Parameter extraction** from battery data  
+ **Degradation tracking** over lifetime  
+ **Visualization tools** for analysis  
+ **Physically interpretable** results  
+ **Ready for hybrid ML+ECM** approaches  
 
 **Key Advantage:** Unlike pure ML, ECM provides **physical insights** into battery degradation mechanisms!
 
