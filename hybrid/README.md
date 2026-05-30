@@ -1,6 +1,6 @@
-# 🚀 Hybrid ECM + LSTM Model
+# Hybrid ECM + LSTM Model
 
-## ✅ YES! Now Your Project is a TRUE HYBRID!
+## Now the Project is a TRUE HYBRID!
 
 This directory contains the **hybrid implementation** that combines:
 - **ECM (Physics-Based)** - Equivalent Circuit Model parameters
@@ -8,7 +8,7 @@ This directory contains the **hybrid implementation** that combines:
 
 ---
 
-## 🎯 What is Hybrid Modeling?
+## What is Hybrid Modeling?
 
 ### **Before (Separate Approaches):**
 ```
@@ -29,7 +29,7 @@ Raw Data → ECM → [R0, R1, C1, τ1]
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### **Option 1: Run the Notebook** (Recommended)
 
@@ -59,18 +59,18 @@ Improvement          +37.89%      +37.34%      +5.81%
 
 ---
 
-## 💡 Why Hybrid is Better
+## Why Hybrid is Better
 
 ### **Comparison:**
 
 | Feature | ECM Only | LSTM Only | **Hybrid** |
 |---------|----------|-----------|------------|
-| **Accuracy** | ⚠️ Good | ✅ Excellent | ✅ **Best** |
-| **Interpretability** | ✅ High | ❌ Black box | ✅ **High** |
-| **Data Needs** | ✅ Low | ❌ High | ✅ **Moderate** |
-| **Speed** | ✅ Fast | ⚠️ Variable | ✅ **Fast** |
-| **Fault Detection** | ✅ Yes | ❌ No | ✅ **Yes** |
-| **Generalization** | ✅ Good | ⚠️ Limited | ✅ **Best** |
+| **Accuracy** |  Good |  Excellent |  **Best** |
+| **Interpretability** |  High |  Black box |  **High** |
+| **Data Needs** |  Low |  High |  **Moderate** |
+| **Speed** |  Fast |  Variable |  **Fast** |
+| **Fault Detection** |  Yes |  No |  **Yes** |
+| **Generalization** |  Good |  Limited |  **Best** |
 
 ### **Key Advantages:**
 
@@ -82,7 +82,7 @@ Improvement          +37.89%      +37.34%      +5.81%
 
 ---
 
-## 📊 How It Works
+## How It Works
 
 ### **Step 1: Extract ECM Parameters**
 
@@ -128,7 +128,7 @@ Dense(16) → Dense(1)
 
 ---
 
-## 📈 Expected Results
+## Expected Results
 
 ### **Performance Metrics:**
 
@@ -147,7 +147,7 @@ Dense(16) → Dense(1)
 
 ---
 
-## 🔬 Example Usage
+## Example Usage
 
 ### **Complete Workflow:**
 
@@ -181,7 +181,7 @@ hybrid.plot_results(y, y_pred, save_path='results.png')
 
 ---
 
-## 🎯 Use Cases
+## Use Cases
 
 ### **1. Battery Management Systems (BMS)**
 ```python
@@ -219,7 +219,7 @@ for battery in production_batch:
 
 ---
 
-## 📚 Files
+## Files
 
 | File | Description |
 |------|-------------|
@@ -229,7 +229,7 @@ for battery in production_batch:
 
 ---
 
-## 🔧 Customization
+## Customization
 
 ### **Change Sequence Length:**
 ```python
@@ -255,7 +255,7 @@ model = Sequential([
 
 ---
 
-## 🎓 Key Insights
+## Key Insights
 
 ### **Why ECM Features Help:**
 
@@ -292,17 +292,17 @@ model = Sequential([
 
 ---
 
-## 🚀 Next Steps
+## Next Steps
 
-1. **✅ Run the notebook** - `hybrid_notebook.ipynb`
-2. **✅ Try different batteries** - B0005, B0006, B0007, etc.
-3. **✅ Experiment with architectures** - Add attention layers
-4. **✅ Deploy for production** - Real-time monitoring
-5. **✅ Transfer learning** - Apply to new battery types
+1. ** Run the notebook** - `hybrid_notebook.ipynb`
+2. ** Try different batteries** - B0005, B0006, B0007, etc.
+3. ** Experiment with architectures** - Add attention layers
+4. ** Deploy for production** - Real-time monitoring
+5. ** Transfer learning** - Apply to new battery types
 
 ---
 
-## 📊 Comparison Summary
+## Comparison Summary
 
 ### **Your Project Now Has:**
 
@@ -311,24 +311,22 @@ model = Sequential([
 | **ML (Random Forest)** | `rul/` | RUL prediction with engineered features |
 | **DL (CNN/LSTM)** | `soh/` | SoH estimation from raw time-series |
 | **Physics (ECM)** | `ecm/` | Interpretable parameter tracking |
-| **🎯 Hybrid (ECM+LSTM)** | `hybrid/` | **Best accuracy + interpretability** |
+| ** Hybrid (ECM+LSTM)** | `hybrid/` | **Best accuracy + interpretability** |
 
 ---
 
-## ✅ Summary
+## Summary
 
-**YES! Your project is now a TRUE HYBRID!**
-
-✅ **Combines physics-based ECM with data-driven LSTM**  
-✅ **Better accuracy than either approach alone**  
-✅ **Physically interpretable predictions**  
-✅ **Built-in fault detection**  
-✅ **Production-ready implementation**  
+**Combines physics-based ECM with data-driven LSTM**  
+**Better accuracy than either approach alone**  
+**Physically interpretable predictions**  
+**Built-in fault detection**  
+**Production-ready implementation**  
 
 **This is the state-of-the-art approach for battery health estimation!**
 
 ---
 
-**Status:** ✅ Hybrid Implementation Complete  
+**Status:** Hybrid Implementation Complete  
 **Ready to Use:** Yes  
 **Next Step:** Run `hybrid_notebook.ipynb`
