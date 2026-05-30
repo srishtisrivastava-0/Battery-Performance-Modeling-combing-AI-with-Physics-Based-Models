@@ -10,11 +10,11 @@ jupyter notebook ecm_notebook.ipynb
 ```
 
 The notebook includes everything you need:
-- ✅ Model comparison (Rint, RC, 2RC)
-- ✅ Parameter extraction over battery lifetime
-- ✅ Degradation visualization
-- ✅ Correlation analysis
-- ✅ Step-by-step explanations
+- Model comparison (Rint, RC, 2RC)
+- Parameter extraction over battery lifetime
+- Degradation visualization
+- Correlation analysis
+- Step-by-step explanations
 
 ### Option 2: Python Script
 
@@ -36,7 +36,7 @@ RC              12.4532      9.8765       0.2876       0.9645
 
 ---
 
-## 📁 Files
+## Files
 
 | File | Description |
 |------|-------------|
@@ -48,7 +48,7 @@ RC              12.4532      9.8765       0.2876       0.9645
 
 ---
 
-## 🔋 What is ECM?
+## What is ECM?
 
 ECM represents battery behavior using electrical circuits:
 
@@ -68,9 +68,9 @@ RC Model:       OCV ---[R0]---[R1-C1]--- Terminal
 
 ---
 
-## 💡 Why Use ECM?
+## Why Use ECM?
 
-### ✅ Advantages over Pure ML:
+### Advantages over Pure ML:
 
 1. **Physically Interpretable**
    - R0 increase → SEI layer growth
@@ -95,26 +95,7 @@ RC Model:       OCV ---[R0]---[R1-C1]--- Terminal
 
 ---
 
-## 📊 Example Results
-
-### Parameter Degradation (Battery B0005)
-
-| Parameter | Initial | Final | Change |
-|-----------|---------|-------|--------|
-| R0 (Ω) | 0.0452 | 0.0621 | +37.4% |
-| R1 (Ω) | 0.0234 | 0.0312 | +33.3% |
-| C1 (F) | 1523 | 1089 | -28.5% |
-| Capacity (Ah) | 1.8523 | 1.5234 | -17.8% |
-
-### Model Accuracy
-
-- **RC Model RMSE:** 12.5 mV
-- **RC Model R²:** 0.965
-- **Computation Time:** ~2 seconds per cycle
-
----
-
-## 🎯 Use Cases
+## Use Cases
 
 ### 1. State of Health (SoH) Estimation
 
@@ -154,7 +135,7 @@ model.fit(X, y)
 
 ---
 
-## 📈 Workflow
+## Workflow
 
 ```python
 # 1. Load battery data
@@ -180,23 +161,23 @@ extractor.save_parameters('B0005_ecm_params.csv')
 
 ---
 
-## 🔬 Parameter Interpretation
+## Parameter Interpretation
 
 ### R0 (Ohmic Resistance)
 - **Physical:** SEI layer, electrolyte, current collectors
-- **Degradation:** ⬆️ Increases with aging
+- **Degradation:** Increases with aging
 - **Typical:** 0.02-0.05 Ω (new) → 0.05-0.15 Ω (aged)
 - **Indicator:** Strong correlation with capacity fade
 
 ### R1 (Polarization Resistance)
 - **Physical:** Charge transfer at electrode interface
-- **Degradation:** ⬆️ Increases with aging
+- **Degradation:** Increases with aging
 - **Typical:** 0.01-0.03 Ω (new) → 0.03-0.10 Ω (aged)
 - **Indicator:** Power capability, reaction kinetics
 
 ### C1 (Polarization Capacitance)
 - **Physical:** Double-layer capacitance
-- **Degradation:** ⬇️ Decreases with aging
+- **Degradation:** Decreases with aging
 - **Typical:** 1000-5000 F (new) → 500-2000 F (aged)
 - **Indicator:** Available surface area
 
@@ -208,7 +189,7 @@ extractor.save_parameters('B0005_ecm_params.csv')
 
 ---
 
-## 📚 Learn More
+## Learn More
 
 - **Comprehensive Guide:** See `ECM_GUIDE.md` for detailed theory and examples
 - **Interactive Tutorial:** Run `ecm_notebook.ipynb` for hands-on learning
@@ -216,22 +197,20 @@ extractor.save_parameters('B0005_ecm_params.csv')
 
 ---
 
-## 🆚 ECM vs ML Comparison
+## ECM vs ML Comparison
 
 | Aspect | ECM | ML/DL |
 |--------|-----|-------|
-| **Interpretability** | ✅ High | ❌ Black box |
-| **Data Requirements** | ✅ Low | ❌ High |
-| **Accuracy** | ⚠️ Good | ✅ Excellent |
-| **Speed** | ✅ Fast | ⚠️ Variable |
-| **Generalization** | ✅ Better | ⚠️ Limited |
-| **Fault Detection** | ✅ Built-in | ⚠️ Needs labels |
-
-**Best Approach:** Combine both! Use ECM parameters as features for ML models.
+| **Interpretability** |  High |  Black box |
+| **Data Requirements** |  Low |  High |
+| **Accuracy** |  Good |  Excellent |
+| **Speed** |  Fast |  Variable |
+| **Generalization** |  Better |  Limited |
+| **Fault Detection** |  Built-in |  Needs labels |
 
 ---
 
-## 🛠️ Requirements
+## Requirements
 
 All dependencies are already installed if you set up the main project:
 
